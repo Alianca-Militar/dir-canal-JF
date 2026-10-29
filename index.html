@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ======================================================================
+     PARA REPLICAR PARA BH, troque:
+       1) as 4 linhas marcadas com  [LOJA]  aqui no <head>
+       2) o bloco CONFIGURAÇÃO no fim do arquivo (<script>)
+       3) os dois links dentro do <noscript>
+     ====================================================================== -->
+<title>Canal de Ofertas | Meia Lua &amp; Invictus JF</title>                      <!-- [LOJA] -->
+<meta name="description" content="Siga o Canal de Ofertas da Meia Lua & Invictus JF no WhatsApp e veja as promoções da Black Friday antes de todo mundo.">  <!-- [LOJA] -->
+<meta name="robots" content="noindex, nofollow">
+
+<!-- Pré-visualização ao compartilhar o link -->
+<meta property="og:title" content="Canal de Ofertas — Meia Lua & Invictus JF">     <!-- [LOJA] -->
+<meta property="og:description" content="Ofertas em primeira mão e cupons exclusivos para quem segue o canal no WhatsApp.">
+<meta property="og:url" content="https://canal.meialuadbarreto.com.br/jf/">        <!-- [LOJA] -->
+<meta property="og:type" content="website">
+
+<!-- ======================================================================
+     PIXEL DA META / GOOGLE ANALYTICS (opcional)
+     Cole aqui os códigos. Os cliques já disparam os eventos:
+       - Seguir o canal ....... Pixel "SeguirCanal" · Analytics "seguir_canal"
+       - Falar com vendedor ... Pixel "Contact"     · Analytics "chamar_vendedor"
+     ====================================================================== -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --preto: #0b0b0c;
+    --grafite: #141417;
+    --linha: #26262b;
+    --laranja: #ff5a1f;
+    --verde: #25d366;
+    --claro: #ececee;
+    --apagado: #8e8e96;
+    --branco: #ffffff;
+    --display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+    --corpo: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    --largura: 1120px;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--preto);
+    color: var(--claro);
+    font-family: var(--corpo);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    width: 100%;
+    max-width: var(--largura);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  a { color: var(--laranja); }
+
+  /* ---------- Cabeçalho ---------- */
+  .topo {
+    background: var(--preto);
+    border-bottom: 2px solid var(--laranja);
+  }
+  .topo .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .marca {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--branco);
+    text-decoration: none;
+    line-height: 1.1;
+  }
+  .marca .chave { color: var(--laranja); }
+  .marca small {
+    display: block;
+    font-family: var(--corpo);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    color: var(--apagado);
+    text-transform: uppercase;
+    margin-top: 3px;
+  }
+  .topo .voltar {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--claro);
+    text-decoration: none;
+  }
+  .topo .voltar:hover { color: var(--laranja); }
+
+  /* ---------- Capa ---------- */
+  .capa {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--linha);
+    padding: 72px 0 64px;
+  }
+  .capa .relevo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .capa .container { position: relative; z-index: 2; }
+
+  .etiqueta {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--preto);
+    background: var(--laranja);
+    padding: 5px 10px;
+    margin: 0 0 22px;
+  }
+
+  .capa h1 {
+    font-family: var(--display);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: clamp(46px, 9.5vw, 96px);
+    line-height: 0.92;
+    margin: 0 0 22px;
+    color: var(--branco);
+  }
+  .capa h1 span { color: var(--laranja); display: block; }
+
+  .capa .chamada {
+    max-width: 52ch;
+    font-size: 18px;
+    color: var(--apagado);
+    margin: 0 0 34px;
+  }
+  .capa .chamada strong { color: var(--claro); font-weight: 600; }
+
+  /* ---------- Botões ---------- */
+  .botao-zap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-family: var(--display);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--preto);
+    background: var(--verde);
+    border: 2px solid var(--verde);
+    padding: 18px 36px;
+    text-decoration: none;
+    transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+  }
+  .botao-zap svg { width: 28px; height: 28px; fill: currentColor; flex: 0 0 auto; }
+  .botao-zap:hover { background: transparent; color: var(--verde); }
+  .botao-zap:active { transform: scale(0.98); }
+  .botao-zap:focus-visible { outline: 2px solid var(--laranja); outline-offset: 4px; }
+
+  .botao-contorno {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--display);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--claro);
+    background: transparent;
+    border: 2px solid var(--linha);
+    padding: 14px 26px;
+    text-decoration: none;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+  .botao-contorno svg { width: 22px; height: 22px; fill: currentColor; }
+  .botao-contorno:hover { border-color: var(--verde); color: var(--verde); }
+  .botao-contorno:focus-visible { outline: 2px solid var(--laranja); outline-offset: 4px; }
+
+  .status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--apagado);
+    margin: 16px 0 0;
+    min-height: 20px;
+  }
+  .status .ponto {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--verde);
+    animation: pulsar 1s ease-in-out infinite;
+  }
+  @keyframes pulsar { 50% { opacity: 0.25; } }
+
+  /* ---------- Seções ---------- */
+  main section.bloco-secao {
+    padding: 56px 0;
+    border-bottom: 1px solid var(--linha);
+  }
+  .rotulo {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--apagado);
+    margin: 0 0 10px;
+  }
+  h2 {
+    font-family: var(--display);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    font-size: clamp(26px, 3.6vw, 40px);
+    line-height: 1.05;
+    margin: 0 0 24px;
+    color: var(--branco);
+  }
+  h3 {
+    font-family: var(--display);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 21px;
+    margin: 0 0 8px;
+    color: var(--branco);
+  }
+
+  .grade {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+  .bloco {
+    background: var(--grafite);
+    border: 1px solid var(--linha);
+    border-top: 3px solid var(--laranja);
+    padding: 24px 22px;
+  }
+  .bloco p { color: var(--apagado); margin: 0; }
+  .bloco .numero {
+    font-family: var(--display);
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--laranja);
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
+  .vendedor .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px 32px;
+  }
+  .vendedor h2 { margin-bottom: 8px; }
+  .vendedor p { color: var(--apagado); margin: 0; max-width: 52ch; }
+
+  /* ---------- Rodapé ---------- */
+  .rodape {
+    background: #070708;
+    border-top: 2px solid var(--laranja);
+    padding: 40px 0 28px;
+    font-size: 14px;
+  }
+  .rodape address {
+    font-style: normal;
+    color: #c3c3ca;
+    line-height: 1.8;
+  }
+  .rodape .razao-social { color: var(--branco); font-weight: 600; display: block; }
+  .rodape a { color: #c3c3ca; text-decoration: none; }
+  .rodape a:hover { color: var(--laranja); }
+  .rodape .assinatura {
+    margin-top: 26px;
+    padding-top: 16px;
+    border-top: 1px solid var(--linha);
+    font-size: 12px;
+    color: #6f6f77;
+  }
+
+  @media (max-width: 640px) {
+    .capa { padding: 48px 0 44px; }
+    main section.bloco-secao { padding: 44px 0; }
+    .botao-zap { width: 100%; padding: 18px 20px; font-size: 20px; }
+    .botao-contorno { width: 100%; justify-content: center; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="container">
+    <a class="marca" href="https://meialuadbarreto.com.br/">
+      <span class="chave">[</span> <span class="js-loja">Meia Lua &amp; Invictus JF</span> <span class="chave">]</span>
+      <small>Confecções · desde 1997</small>
+    </a>
+    <a class="voltar" href="https://meialuadbarreto.com.br/">Site principal →</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="capa">
+    <svg class="relevo" viewBox="0 0 1200 480" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+      <defs>
+        <path id="curva" d="M-80,70 C160,-10 330,130 520,95 C720,58 880,-40 1280,55" />
+      </defs>
+      <g fill="none" stroke="#26262b" stroke-width="1.1">
+        <use href="#curva" y="0"></use><use href="#curva" y="42"></use>
+        <use href="#curva" y="84"></use><use href="#curva" y="126"></use>
+        <use href="#curva" y="168"></use><use href="#curva" y="210"></use>
+        <use href="#curva" y="252"></use><use href="#curva" y="294"></use>
+        <use href="#curva" y="336"></use><use href="#curva" y="378"></use>
+        <use href="#curva" y="420"></use>
+      </g>
+      <g fill="none" stroke="#ff5a1f" stroke-width="1.4" opacity="0.35">
+        <use href="#curva" y="168"></use>
+      </g>
+    </svg>
+
+    <div class="container">
+      <p class="etiqueta">Black Friday antecipada</p>
+      <h1>Canal de <span>Ofertas</span></h1>
+      <p class="chamada">Siga o canal da <strong class="js-loja">Meia Lua &amp; Invictus JF</strong> no WhatsApp e veja as promoções <strong>antes de todo mundo</strong>, com cupons exclusivos para seguidores.</p>
+
+      <a class="botao-zap js-canal" href="#" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 21.5h-.01a9.45 9.45 0 0 1-4.82-1.32l-.35-.2-3.58.94.96-3.49-.23-.36a9.43 9.43 0 0 1-1.45-5.04c0-5.22 4.25-9.47 9.48-9.47a9.4 9.4 0 0 1 6.7 2.78 9.4 9.4 0 0 1 2.77 6.7c0 5.22-4.25 9.46-9.47 9.46zm8.06-17.53A11.33 11.33 0 0 0 12.04.63C5.76.63.65 5.74.65 12.02c0 2.01.52 3.97 1.52 5.7L.55 23.63l6.05-1.59a11.37 11.37 0 0 0 5.44 1.39h.01c6.28 0 11.39-5.11 11.39-11.39 0-3.04-1.19-5.9-3.34-8.06z"/></svg>
+        Seguir o canal
+      </a>
+      <p class="status" id="status" aria-live="polite">É grátis. Você sai do canal quando quiser.</p>
+
+      <noscript>
+        <p class="status">
+          <a href="https://whatsapp.com/channel/0029Vb9IucAIN9ipxHczPB33">Abrir o canal no WhatsApp</a> ·
+          <a href="https://wa.me/5532988573568">Falar com um vendedor</a>
+        </p>
+      </noscript>
+    </div>
+  </section>
+
+  <section class="bloco-secao">
+    <div class="container">
+      <p class="rotulo">Por que seguir</p>
+      <h2>O que você recebe no canal</h2>
+      <div class="grade">
+        <div class="bloco">
+          <div class="numero">01</div>
+          <h3>Ofertas antes de todo mundo</h3>
+          <p>As promoções da Black Friday e os lançamentos aparecem primeiro para quem segue o canal.</p>
+        </div>
+        <div class="bloco">
+          <div class="numero">02</div>
+          <h3>Cupons exclusivos</h3>
+          <p>Descontos que só são publicados no canal, para usar na loja ou com o vendedor.</p>
+        </div>
+        <div class="bloco">
+          <div class="numero">03</div>
+          <h3>Sem mensagem no seu chat</h3>
+          <p>As novidades ficam na aba Atualizações do WhatsApp. Ninguém vê seu número e você sai com um toque.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloco-secao vendedor">
+    <div class="container">
+      <div>
+        <p class="rotulo">Atendimento</p>
+        <h2>Prefere falar com um vendedor?</h2>
+        <p>Tire dúvidas de tamanho, estoque e condições direto com a equipe da loja, em horário comercial.</p>
+      </div>
+      <a class="botao-contorno js-vendedor" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 21.5h-.01a9.45 9.45 0 0 1-4.82-1.32l-.35-.2-3.58.94.96-3.49-.23-.36a9.43 9.43 0 0 1-1.45-5.04c0-5.22 4.25-9.47 9.48-9.47a9.4 9.4 0 0 1 6.7 2.78 9.4 9.4 0 0 1 2.77 6.7c0 5.22-4.25 9.46-9.47 9.46zm8.06-17.53A11.33 11.33 0 0 0 12.04.63C5.76.63.65 5.74.65 12.02c0 2.01.52 3.97 1.52 5.7L.55 23.63l6.05-1.59a11.37 11.37 0 0 0 5.44 1.39h.01c6.28 0 11.39-5.11 11.39-11.39 0-3.04-1.19-5.9-3.34-8.06z"/></svg>
+        Chamar vendedor
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <div class="container">
+    <address>
+      <span class="razao-social">MEIA LUA E D BARRETO CONFECCOES LTDA</span>
+      CNPJ 01.710.455/0001-63<br>
+      Rua General Deschamps Cavalcanti, 53, A — Fábrica — Juiz de Fora/MG — CEP 36080-220<br>
+      E-mail: <a href="mailto:contato@meialuadbarreto.com.br">contato@meialuadbarreto.com.br</a> ·
+      <a href="https://meialuadbarreto.com.br/privacidade">Política de Privacidade</a>
+    </address>
+    <p class="assinatura">© 2026 MEIA LUA E D BARRETO CONFECCOES LTDA — CNPJ 01.710.455/0001-63. Todos os direitos reservados. INVICTUS é marca de titularidade de terceiro, utilizada mediante licença nas lojas de Juiz de Fora e Belo Horizonte.</p>
+  </div>
+</footer>
+
+<script>
+  /* ================================================================
+     CONFIGURAÇÃO — para BH, altere só este bloco
+     ================================================================ */
+  var CONFIG = {
+    LOJA: "Meia Lua & Invictus JF",
+    LINK_CANAL: "https://whatsapp.com/channel/0029Vb9IucAIN9ipxHczPB33",
+    NUMERO_VENDEDOR: "5532988573568",        // 55 + DDD + número, só dígitos
+    MENSAGEM_VENDEDOR: "Olá, vim pelo Canal de Ofertas da Meia Lua & Invictus JF e quero falar com um vendedor.",
+
+    REDIRECIONAR_SOZINHO: true,              // abre o canal automaticamente ao carregar a página
+    ESPERA_MS: 1500,                          // tempo antes de abrir (dá tempo de registrar a visita)
+
+    // Opcional, para o CRM: endereço que recebe o registro de cada visita.
+    // Deixe vazio até o CRM ter a rota pronta. Ex.: "https://crm.meialuadbarreto.com.br/api/canal/visita"
+    REGISTRO_URL: ""
+  };
+  /* ================================================================ */
+
+  (function () {
+    var linkVendedor = "https://wa.me/" + CONFIG.NUMERO_VENDEDOR +
+                       "?text=" + encodeURIComponent(CONFIG.MENSAGEM_VENDEDOR);
+
+    document.querySelectorAll(".js-loja").forEach(function (el) { el.textContent = CONFIG.LOJA; });
+    document.querySelectorAll(".js-canal").forEach(function (a) { a.href = CONFIG.LINK_CANAL; });
+    document.querySelectorAll(".js-vendedor").forEach(function (a) { a.href = linkVendedor; });
+
+    // Dados da visita: UTMs da campanha e código do cliente (?c=...), se vierem no link
+    var params = new URLSearchParams(window.location.search);
+    var visita = {
+      loja: CONFIG.LOJA,
+      cliente: params.get("c") || "",
+      utm_source: params.get("utm_source") || "",
+      utm_medium: params.get("utm_medium") || "",
+      utm_campaign: params.get("utm_campaign") || "",
+      quando: new Date().toISOString()
+    };
+
+    function registrar(acao) {
+      try { if (window.fbq) fbq(acao === "canal" ? "trackCustom" : "track", acao === "canal" ? "SeguirCanal" : "Contact", { campanha: visita.utm_campaign }); } catch (e) {}
+      try { if (window.gtag) gtag("event", acao === "canal" ? "seguir_canal" : "chamar_vendedor", { campaign: visita.utm_campaign }); } catch (e) {}
+      if (CONFIG.REGISTRO_URL && navigator.sendBeacon) {
+        try {
+          var dados = Object.assign({ acao: acao }, visita);
+          navigator.sendBeacon(CONFIG.REGISTRO_URL, new Blob([JSON.stringify(dados)], { type: "application/json" }));
+        } catch (e) {}
+      }
+    }
+
+    var abriu = false;
+    function abrirCanal() {
+      if (abriu) return;
+      abriu = true;
+      registrar("canal");
+      window.location.href = CONFIG.LINK_CANAL;
+      var st = document.getElementById("status");
+      if (st) st.textContent = "Se o WhatsApp não abriu, toque em “Seguir o canal”.";
+    }
+
+    document.querySelectorAll(".js-canal").forEach(function (a) {
+      a.addEventListener("click", function (ev) {
+        ev.preventDefault();
+        abriu = false;          // permite tentar de novo pelo botão
+        abrirCanal();
+      });
+    });
+    document.querySelectorAll(".js-vendedor").forEach(function (a) {
+      a.addEventListener("click", function () { registrar("vendedor"); });
+    });
+
+    if (CONFIG.REDIRECIONAR_SOZINHO) {
+      var st = document.getElementById("status");
+      if (st) st.innerHTML = '<span class="ponto" aria-hidden="true"></span> Abrindo o canal no WhatsApp…';
+      setTimeout(abrirCanal, CONFIG.ESPERA_MS);
+    }
+  })();
+</script>
+
+</body>
+</html>
